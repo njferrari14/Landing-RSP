@@ -1,0 +1,64 @@
+// SITE CORE MODIFICATIONS --- HEADER
+
+// fing zindex issues
+header {
+	z-index: 999999;
+}
+
+
+// fixing some locations of items
+header .menu-column #main-menu {
+	margin-top: 0 !important;
+}
+
+header .menu-column #main-menu>li#hamburger-desktop {
+	vertical-align: -10%;
+}
+
+@media only screen and (min-width: 1224px) {
+	header .menu-column .desktop-search-container {
+		top: 0 !important;
+	}
+}
+
+
+
+/* killing the transition pause */
+header.container-fluid,
+header .menu-column #main-menu>li,
+header .logo-column>a .header-logo {
+	transition-delay: .001s !important;
+	transition: all .25s linear;
+}
+
+
+
+
+/* nav background hover fix */
+header .menu-column #main-menu>li .sub-menu-desktop>li ul li a:hover {
+	background: none !important;
+	outline: none !important;
+}
+
+header .menu-column #main-menu>li .sub-menu-desktop>li ul {
+	padding: 10px 0;
+	
+	li a {
+		padding: 5px 15px;
+	}
+}
+
+
+
+/* hamburger menu */
+header .menu-column #main-menu>li#hamburger-desktop #main-menu-desktop-hamburger .top .left .cta-container a {
+	margin-bottom: 5px;
+}
+
+header .menu-column #main-menu>li#hamburger-desktop #main-menu-desktop-hamburger .top .right #hamburger-menu-items>li {
+	padding: 3px 0;
+}
+
+.cta-container .btn-primary:hover {
+	transition: all .25s linear;
+}
