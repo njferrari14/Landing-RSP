@@ -1,5 +1,12 @@
 // GRID
 
+.hpy_modular .container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+
 .hpy_modular .hpy_grid {
 	@include flex(row, space-between, flex-start, flex-start, wrap);
 	
@@ -13,6 +20,10 @@
 	
 	&.v-center {
 		align-items: center;
+	}
+	
+	&.stretch {
+		align-items: stretch;
 	}
 	
 	&.v-top {
@@ -64,12 +75,6 @@
 	      display: none;
 	    }
 	  }
-
-	  @media only screen and (min-width: $responsive-md) {
-	  	&.empty-lg {
-				display: none;
-	  	}
-	  }
 	}
 
 
@@ -86,6 +91,22 @@
   .col-10 { width: ($grid-width / (12 / 10)) - ($grid-gutter * 2 / 12); }
   .col-11 { width: ($grid-width / (12 / 11)) - ($grid-gutter * 1 / 12); }
   .col-12 { width: $grid-width; }
+
+
+	@media only screen and (max-width: $responsive-lg) {	
+	  .col-lg-1  { width: ($grid-width / 12) - ($grid-gutter * 11 / 12); }
+	  .col-lg-2  { width: ($grid-width / 6) - ($grid-gutter * 10 / 12); }
+	  .col-lg-3  { width: ($grid-width / 4) - ($grid-gutter * 9 / 12); }
+	  .col-lg-4  { width: ($grid-width / 3) - ($grid-gutter * 8 / 12);}
+	  .col-lg-5  { width: ($grid-width / (12 / 5)) - ($grid-gutter * 7 / 12); }
+	  .col-lg-6  { width: ($grid-width / 2) - ($grid-gutter * 6 / 12); }
+	  .col-lg-7  { width: ($grid-width / (12 / 7)) - ($grid-gutter * 5 / 12); }
+	  .col-lg-8  { width: ($grid-width / (12 / 8)) - ($grid-gutter * 4 / 12); }
+	  .col-lg-9  { width: ($grid-width / (12 / 9)) - ($grid-gutter * 3 / 12); }
+	  .col-lg-10 { width: ($grid-width / (12 / 10)) - ($grid-gutter * 2 / 12); }
+	  .col-lg-11 { width: ($grid-width / (12 / 11)) - ($grid-gutter * 1 / 12); }
+	  .col-lg-12 { width: $grid-width; }
+	}
 
 
 	@media only screen and (max-width: $responsive-md) {	

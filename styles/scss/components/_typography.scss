@@ -10,7 +10,6 @@
 	margin: 0 0 $bottom-margin; 
 	font: 900 45px/1.2 $primary-font;
 	text-rendering: optimizeLegibility;
-	letter-spacing: -0.03em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -40,11 +39,11 @@
 	margin-bottom: 16px !important;
 	
   @media only screen and (max-width: $responsive-md) {		
-		font-size: 55px;
+		font-size: 55px !important;
 	}
 	
   @media only screen and (max-width: $responsive-sm) {	
-		font-size: 42px;
+		font-size: 42px !important;
 	}
 }	
 
@@ -52,7 +51,7 @@
 	font-size: 45px;
 	font-weight: 400;
 	letter-spacing: -2px;
-	margin-bottom: .5em;
+	margin-bottom: 50px;
 	
   @media only screen and (max-width: $responsive-md) {		
 		font-size: 38px;
@@ -74,6 +73,7 @@
 .hpy_modular h4 {
 	font-size: 24px;
 	font-weight: normal;
+	letter-spacing: -.05em;
 	
   @media only screen and (max-width: $responsive-sm) {	
 		font-size: 20px;
@@ -82,8 +82,28 @@
 	
 
 
-.hpy_modular .half-bot-margin {
-	margin-bottom: 20px;
+.hpy_modular .no-bot-margin {
+	margin-bottom: 0 !important;
+}
+
+.hpy_modular .xs-bot-margin {
+	margin-bottom: 5px !important;
+}
+
+.hpy_modular .sm-bot-margin {
+	margin-bottom: 15px !important;
+}
+
+.hpy_modular .md-bot-margin {
+	margin-bottom: 20px !important;
+}
+
+.hpy_modular .lg-bot-margin {
+	margin-bottom: 30px !important;
+}
+
+.hpy_modular .xl-bot-margin {
+	margin-bottom: 80px !important;
 }
 
 
@@ -112,8 +132,17 @@
 
 	// font weights
 	strong, 
-	b {
-		font-weight: 700;
+	b, .text-bold {
+		font-weight: 700 !important;
+	}
+
+	// letter-spacing
+	.zero-space {
+		letter-spacing: initial !important;
+	}
+
+	.half-space {
+		letter-spacing: -.05em;
 	}
 
 	// text colors
@@ -160,12 +189,15 @@
 	    .text-center-sm {
 				text-align: center;
 	    }
+
+	    .text-left-sm {
+	    	text-align: left;
+	    }
 	  }
 	
 	  @media only screen and (max-width: $responsive-md) {		
 	    .text-center-md {
 				text-align: center !important;
-				margin-top: 0 !important;
 	    }
 	  }
 
@@ -313,9 +345,12 @@
 			}
 		}
 	}
-	
-	
-	
+
+	.check-item {
+		line-height: 2 !important;
+	}
+
+
 	// icons	 
 	.circle-check,
 	.checkmark:not(ul) {
@@ -388,3 +423,10 @@
 	}
 }
 
+// breaks
+
+@media only screen and (max-width: $responsive-max) {
+	.hide-break {
+		display: none;
+	}
+}

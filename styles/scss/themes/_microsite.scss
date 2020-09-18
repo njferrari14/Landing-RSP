@@ -1,0 +1,412 @@
+// MAIN MICROSITE PAGE
+ 
+header img {
+	height: initial !important;
+}
+
+.hpy_logo {
+	&:hover {
+		border-bottom: none;
+	}
+}
+
+.hpy_modular {
+	padding-top: 20px !important;
+}
+
+.hand {
+	font-family: 'Patrick Hand', cursive !important;
+}
+
+.hand-dark {
+	color: $hand-dark-color !important;
+}
+
+.stretch {
+	align-items: stretch !important;
+}
+
+#resources {
+
+	.card {
+		box-shadow: 0 1px 5px rgba(36,49,83,.15);	
+	}
+
+	.mid-top-card {
+		margin-bottom: 20px !important;
+	}
+}
+
+#guide {
+	.link-arrow {
+		font: 16px/1.4 "Arial", sans-serif !important;
+	}
+
+	.no-underline {
+		border: none !important;
+	}
+}
+
+.page-micro {
+	
+	.hero {
+		h1 {
+			font-size: 72px;
+		}
+
+		@media only screen and (max-width: $responsive-sm) {
+			h1 {
+				font-size: 62px;
+			}
+		}
+	}
+
+	.signature {
+		p {
+			display: inline-block;
+			margin-bottom: 15px;
+		}
+	}
+
+	.hidden {
+		visibility: hidden !important;
+	}
+
+	.test-p {
+		text-indent: -10px;
+	}
+
+	#resources {
+		padding-bottom: 60px;
+	}
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -25px !important;
+	}
+
+	.form-pardot {
+
+		.slides {
+			transition: all .2s linear;
+		}
+
+		.slide-in, .in {
+			display: default;
+		}
+
+		.slide-out, .out {
+			display: none;
+		}
+
+		.checkbox-label {
+			font-size: .8em !important;
+			margin: 0 !important;
+			padding-left: 0 !important;
+			display: inline-block !important;
+		}
+
+		.checkbox {
+			margin-bottom: 40px;
+
+			input {
+				margin: 0;
+			}
+		}
+	}
+
+	@media only screen and (max-width: $responsive-sm) {
+
+		.sm-left-margin {
+			margin-left: 50px;
+		}
+
+	}
+}
+
+.page-micro-main {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -30px !important;
+		left: -50px !important;
+	}
+
+	#video {
+		padding-bottom: 0 !important;
+	}
+
+	#testimonials {
+		padding-top: 0 !important;
+	}
+
+}
+
+.page-micro-home-services {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -15px !important;
+		left: -90px !important;
+	}
+
+}
+
+.page-micro-restaurants {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -15px !important;
+		left: -20px !important;
+	}
+
+}
+
+.page-micro-retail {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -15px !important;
+		left: -60px !important;
+	}
+
+}
+
+.page-micro-entertainment {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -55px !important;
+		left: -40px !important;
+	}
+
+}
+
+.page-micro-everything-else {
+
+	.hero-hand-text {
+		position: relative !important;
+		top: -15px !important;
+	}
+
+}
+
+.page-micro-everything-else, .page-micro-entertainment, .page-micro-home-services, .page-micro-restaurants, .page-micro-retail, .page-micro-main {
+
+	@media only screen and (max-width: $responsive-lg) {
+		.hero-hand-text {
+			left: -10px !important;
+		}
+	}
+
+}
+
+@media only screen and (max-width: $responsive-sm) {
+	
+	.transformation-text {
+		left: 0 !important;
+	}
+
+	.col-sm-12 {
+		margin-bottom: 0 !important;
+	}
+
+	.card {
+		margin-bottom: 25px !important;
+	}
+}
+
+.testimonial-img {
+	box-shadow: none;
+}
+
+.lg-p {
+	font-size: 20px !important;
+}
+
+@media only screen and (max-width: $responsive-sm) {
+	.testimonial-img {
+		max-width: 385px !important;
+	}
+
+	.sm-flip-1 {
+		position: relative;
+		top: 450px;
+		margin-bottom: 0 !important;
+	}
+	.sm-flip-2 {
+		position: relative;
+		top: -200px;
+		margin-bottom: 0 !important;
+	}
+
+	.test-3 {
+		margin-top: -150px;
+	}
+	.test-p {
+		font-size: 16px !important;
+	}
+}
+
+@media only screen and (max-width: $responsive-xs) {
+	.sm-flip-2 {
+		top: -300px;
+	}
+
+	.testimonial-img {
+		max-width: 100% !important;
+	}
+}
+
+.hpy_modular.page-micro {
+	
+	#topper {
+		padding-bottom: 0;
+	}
+	
+	// slider hero	 
+	.hero_slideshow {
+		padding: 60px 0 80px;
+		display: block;
+		position: relative;
+		
+		#slider {
+			margin: 0 !important;
+		}
+		
+		div.contents {
+			margin: 0;
+			z-index: 100;
+			max-width: 1120px;
+			background: $white;
+			width: 90%;
+			//display: none;
+			left: 50%;
+			transform: translate(-50%, 0);
+			box-sizing: border-box;
+	
+			@media screen and (max-width: 930px) {
+				width: 100% !important;
+		  }
+		}
+		
+		.button-container {
+			margin-bottom: 25px;
+		}
+		
+		section {
+			padding-top: 80px;
+			border-radius: $border-radius;
+		}
+	}
+
+	// #slide-1 {
+	// 	background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/home/01-payment.jpg?v=0227202080085');
+	// }	
+	// #slide-2 {
+	// 	background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/home/payroll_home_hero1.jpg?v=0227202080085');
+	// }	
+	// #slide-3 {
+	// 	background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/home/03-point-of-sale.jpg?v=0227202080085');
+	// }	
+	// #slide-4 {
+	// 	background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/home/04-customer-engagement.jpg?v=0227202080085');
+	// }	
+	// #slide-5 {
+	// 	background-image: url('https://prod-heartland.azureedge.net/-/media/heartland/home/Capital_home_hero.jpg?v=0227202080085');
+	// }
+	
+	
+	
+
+	
+	.learn-more {
+		padding: 55px 0;
+		background-image: linear-gradient(to left, #FFFFFF 0%, #F1F1F2 50%, #FFFFFF 100%);
+		//box-shadow: 0 0 13px -6px rgba(0,0,0,0.25);
+		
+		h3 {
+			margin-bottom: 10px !important;
+			font-size: 23px;
+		}	
+	}
+	
+	
+	ul.company-we-keep {
+		@include list-style(null);
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		padding: 30px 0 10px !important;	
+		
+		li img {
+			width: auto !important;
+			height: 60px;
+		}
+		
+		li:last-child img {
+			height: 30px;
+		}
+
+	  @media only screen and (max-width: $responsive-md) {	
+			flex-wrap: wrap;
+			text-align: center;
+			width: 100% !important;
+	
+			li {
+				width: 25%;
+				margin-bottom: 20px;
+			}
+		}
+
+	  @media only screen and (max-width: $responsive-sm) {			
+			width: 50%;
+			margin-bottom: 20px;
+		}	
+	}
+	
+	
+	
+	.support-security {
+	  @media only screen and (max-width: $responsive-md) {
+			height: 1080px;
+		}	
+	}
+	
+
+	.rounded {
+		h3 {
+			margin-bottom: 10px;
+			font-size: 28px;
+			padding: 0 3%;
+		}
+		
+		img {
+			display: block;
+			margin-bottom: $bottom-margin;
+		}	
+	
+	}
+	
+	.card-flip {
+	  width: 100%;
+
+		.front,
+		.back {
+			padding: 55px 0;
+			
+			p {
+				padding: 0 10px;
+			}
+		}
+	}
+	
+
+
+	#signup-form a.link-arrow {
+		border-bottom: 0 !important;
+	}
+
+
+	
+	
+}

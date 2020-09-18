@@ -3,8 +3,42 @@
 // fing zindex issues
 header {
 	z-index: 999999;
-}
+	
+	.callout {
+		display: none;
+	}
 
+	@media screen and (min-width: $responsive-sm) { // desktop
+		// COVID-19 updates only showing on desktop
+	  max-height: 60px;
+	
+		.logo-column {
+			position: static !important;
+		}
+	
+		.callout {
+			position: absolute;
+	    top: -28px;
+	    /* border: 1px solid red; */
+	    left: 0;
+	    right: 0;
+	    width: 100%;
+	    text-align: center;
+	    font-weight: bold;
+			display: block;
+  
+			@media only screen and (max-width: 1199px) {
+				top: -38px;
+			}
+		
+			a {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+	}
+	
+}
 
 // fixing some locations of items
 header .menu-column #main-menu {
@@ -30,8 +64,6 @@ header .logo-column>a .header-logo {
 	transition-delay: .001s !important;
 	transition: all .25s linear;
 }
-
-
 
 
 /* nav background hover fix */
