@@ -2371,9 +2371,18 @@ footer#footer-modular {
 
 .partner-nav ul {
   list-style: none !important;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  justify-content: flex-end !important; }
+  @media only screen and (max-width: 1024px) {
+    .partner-nav ul {
+      justify-content: space-between !important; } }
   .partner-nav ul li {
-    min-width: 180px; }
+    margin: 0 20px; }
+    @media only screen and (max-width: 769px) {
+      .partner-nav ul li {
+        margin: 0;
+        width: 100%; } }
     .partner-nav ul li a {
       color: #003B71;
       font-weight: 700;

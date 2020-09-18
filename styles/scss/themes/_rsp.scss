@@ -23,9 +23,21 @@
 	ul {
 		list-style: none !important;
 		padding: 0;
+		display: flex;
+		justify-content: flex-end !important;
+		
+		@media only screen and (max-width: $responsive-lg) {
+			justify-content: space-between !important;
+		}
 
 		li {
-			min-width: 180px;
+			margin: 0 20px;
+
+			@media only screen and (max-width: $responsive-sm) {
+				margin: 0;
+				width: 100%;
+			}
+
 
 			a {
 				color: $primary-3;
