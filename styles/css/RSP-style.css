@@ -2353,6 +2353,12 @@ footer#footer-modular {
     footer#footer-modular .copyright p {
       margin-top: 0; } }
 
+p, li {
+  color: #53565a !important; }
+
+h1, h2, h3, h4 {
+  color: #33393d !important; }
+
 .hpy_logo {
   min-width: 148px; }
   .hpy_logo:hover {
@@ -2390,19 +2396,27 @@ footer#footer-modular {
       .partner-nav ul li a:hover {
         border: none !important; }
 
-#partner-vertical .bg-image {
-  background: url("../../../assets/images/portico-virtual-bg.jpg") no-repeat scroll top center;
-  padding: 80px 0 80px; }
-  @media only screen and (max-width: 992px) {
-    #partner-vertical .bg-image {
-      padding-left: 20px; } }
-  @media only screen and (max-width: 769px) {
-    #partner-vertical .bg-image {
-      padding-top: 40px; } }
+#partner-vertical {
+  padding-bottom: 20px !important; }
+  #partner-vertical p, #partner-vertical li, #partner-vertical h1, #partner-vertical h2, #partner-vertical h3, #partner-vertical h4 {
+    color: #fff !important; }
+  #partner-vertical .bg-image {
+    background: url("https://go.heartlandpaymentsystems.com/l/125771/2020-09-21/7f16wv/125771/142027/rsp_home_bg.jpg") no-repeat scroll top center;
+    padding: 80px 0 80px;
+    border-radius: 4px;
+    background-size: cover; }
+    @media only screen and (max-width: 992px) {
+      #partner-vertical .bg-image {
+        padding-left: 20px; } }
+    @media only screen and (max-width: 769px) {
+      #partner-vertical .bg-image {
+        padding-top: 40px; } }
 
 #banner {
   background-color: #324a5e;
   padding: 40px 0; }
+  #banner h1 {
+    color: #fff !important; }
   @media only screen and (max-width: 1024px) {
     #banner {
       margin-top: 40px; } }
@@ -2410,6 +2424,8 @@ footer#footer-modular {
 .rsp-list {
   list-style: none; }
   .rsp-list li::before {
+    position: relative;
+    top: 3px;
     content: "\2022";
     color: #7fb8e6;
     font-weight: bold;
@@ -2420,7 +2436,8 @@ footer#footer-modular {
 
 .blue-box {
   background-color: #e5f1fa;
-  padding: 2.5em; }
+  padding: 2.5em;
+  border-radius: 4px; }
 
 h4 {
   font-weight: 700 !important; }
@@ -2444,3 +2461,6 @@ table {
     padding: 10px; }
   table tr td:first-child, table tr th:first-child {
     width: 30%; }
+
+.tut img {
+  box-shadow: 0 4px 19px rgba(39, 98, 138, 0.14); }

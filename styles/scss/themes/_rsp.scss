@@ -1,3 +1,11 @@
+p, li {
+	color: $rsp-font-color !important;
+}
+
+h1, h2, h3, h4 {
+	color: $rsp-headings-color !important;
+}
+
 .hpy_logo {
 	min-width: 148px;
 
@@ -25,7 +33,7 @@
 		padding: 0;
 		display: flex;
 		justify-content: flex-end !important;
-		
+
 		@media only screen and (max-width: $responsive-lg) {
 			justify-content: space-between !important;
 		}
@@ -54,10 +62,17 @@
 }
 
 #partner-vertical {
+	padding-bottom: 20px !important;
+
+	p, li, h1, h2, h3, h4 {
+		color: $white !important;
+	}
 
 	.bg-image {
-		background: url('../../../assets/images/portico-virtual-bg.jpg') no-repeat scroll top center;
+		background: url('https://go.heartlandpaymentsystems.com/l/125771/2020-09-21/7f16wv/125771/142027/rsp_home_bg.jpg') no-repeat scroll top center;
 		padding: 80px 0 80px;
+		border-radius: 4px;
+		background-size: cover;
 
 		@media only screen and (max-width: $responsive-md) {
 			padding-left: 20px;
@@ -72,6 +87,9 @@
 #banner {
 	background-color: #324a5e;
 	padding: 40px 0;
+	h1 {
+		color: $white !important;
+	}
 
 	@media only screen and (max-width: $responsive-lg) {
 		margin-top: 40px;
@@ -85,6 +103,8 @@
   }
 
   li::before {
+  	position: relative;
+  	top: 3px;
 	  content: "\2022";
 	  color: #7fb8e6;
 	  font-weight: bold;
@@ -98,6 +118,7 @@
 .blue-box {
 	background-color: #e5f1fa;
 	padding: 2.5em;
+	border-radius: 4px;
 }
 
 h4 {
@@ -135,3 +156,8 @@ table {
 		}
 	}
 }
+
+.tut img {
+	box-shadow: 0 4px 19px rgba(39,98,138,0.14);
+}
+
