@@ -2398,7 +2398,7 @@ h1, h2, h3, h4 {
 
 #partner-vertical {
   padding-bottom: 20px !important; }
-  #partner-vertical p, #partner-vertical li, #partner-vertical h1, #partner-vertical h2, #partner-vertical h3, #partner-vertical h4 {
+  #partner-vertical p, #partner-vertical li, #partner-vertical h3, #partner-vertical h4 {
     color: #fff !important; }
   #partner-vertical .bg-image {
     background: url("https://go.heartlandpaymentsystems.com/l/125771/2020-09-21/7f16wv/125771/142027/rsp_home_bg.jpg") no-repeat scroll top center;
